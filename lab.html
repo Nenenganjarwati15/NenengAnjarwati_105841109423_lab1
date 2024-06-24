@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Penilaian dan Game Check Jodoh</title>
+</head>
+<body>
+    <h1>Penilaian</h1>
+    <script>
+        let nilai = 80;
+        if (nilai >= 80) {
+            document.write("Nilai kamu A<br>");
+        } else if (nilai >= 70) {
+            document.write("Nilai kamu B<br>");
+        } else if (nilai >= 60) {
+            document.write("Nilai kamu C<br>");
+        } else {
+            document.write("Nilai kamu Nol<br>");
+        }
+    </script>
+
+    <h1>Game Check Jodoh</h1>
+    <script>
+        let nameCewek = "Neneng";
+        let nameCowok = "Sultan";
+        let hasil = Math.floor(Math.random() * 71) + 30;
+
+        if (hasil >= 80) {
+            document.write("Selamat " + nameCewek + " dan " + nameCowok + " adalah jodoh sejati. Skor: " + hasil);
+        } else if (hasil >= 70) {
+            document.write("Selamat " + nameCewek + " dan " + nameCowok + " cukup cocok. Skor: " + hasil);
+        } else if (hasil >= 60) {
+            document.write("Selamat " + nameCewek + " dan " + nameCowok + " mungkin bisa jodoh. Skor: " + hasil);
+        } else {
+            document.write("Maaf " + nameCewek + " dan " + nameCowok + " tidak jodoh. Skor: " + hasil);
+        }
+    </script>
+</body>
+</html>
